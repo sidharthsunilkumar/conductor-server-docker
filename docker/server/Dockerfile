@@ -14,7 +14,7 @@ COPY . /conductor
 WORKDIR /conductor
 
 # Build the server on run
-RUN chmod +x ./gradlew build -x test
+RUN ./gradlew build -x test
 
 # ===========================================================================================================
 # 1. Bin stage
