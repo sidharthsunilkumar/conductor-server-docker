@@ -14,7 +14,7 @@ COPY . /conductor
 WORKDIR /conductor
 
 # Build the server on run
-RUN ./gradle build
+RUN chmod +x ./gradle build
 
 # ===========================================================================================================
 # 1. Bin stage
